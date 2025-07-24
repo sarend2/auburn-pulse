@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+// pages/sitemap.xml.js
+export default function Sitemap() {
+  // This component doesn't render anything
+  return null;
+}
+
+export async function getServerSideProps({ res }) {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://theauburnpulse.com</loc>
@@ -25,4 +32,13 @@
     <lastmod>2025-07-24</lastmod>
     <priority>0.8</priority>
   </url>
-</urlset>
+</urlset>`;
+
+  res.setHeader('Content-Type', 'text/xml');
+  res.write(sitemap);
+  res.end();
+
+  return {
+    props: {},
+  };
+}
