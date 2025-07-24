@@ -1,4 +1,4 @@
-// pages/privacy.js (UPDATED)
+// pages/privacy.js (UPDATED - No Email)
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
@@ -49,11 +49,10 @@ export default function Privacy() {
               individual users or connect this information to personal details.
             </p>
 
-            <h3>Contact Information</h3>
+            <h3>No Personal Data Collection</h3>
             <p>
-              If you email us at <a href="mailto:hello@auburnpulse.com" className="privacy-email">hello@auburnpulse.com</a>, 
-              we temporarily store your message to respond helpfully. We delete contact information 
-              once our conversation is complete.
+              Auburn Pulse does not collect personal contact information or maintain user databases. 
+              We operate as a simple local guide without user interaction features.
             </p>
           </section>
 
@@ -64,6 +63,7 @@ export default function Privacy() {
             </p>
             <ul>
               <li>Personal identifying information (names, addresses, phone numbers)</li>
+              <li>Email addresses or contact information</li>
               <li>User accounts or login credentials</li>
               <li>Payment or financial information</li>
               <li>Precise location tracking</li>
@@ -90,7 +90,7 @@ export default function Privacy() {
             </p>
             <p>
               For detailed information about Google's data practices, visit: 
-              <a href="https://policies.google.com/privacy" className="privacy-email" target="_blank" rel="noopener noreferrer">
+              <a href="https://policies.google.com/privacy" className="privacy-link" target="_blank" rel="noopener noreferrer">
                 Google Privacy Policy
               </a>
             </p>
@@ -112,10 +112,9 @@ export default function Privacy() {
               <li><strong>Browser settings:</strong> Disable cookies or use private browsing</li>
               <li><strong>Google Ad Settings:</strong> Control ad personalization preferences</li>
               <li><strong>Analytics opt-out:</strong> Use Google's analytics opt-out tools</li>
-              <li><strong>Email preferences:</strong> Contact us to manage any stored communications</li>
             </ul>
             <p>
-              For detailed cookie management: <Link href="/cookies" className="privacy-email">View our Cookie Policy</Link>
+              For detailed cookie management: <Link href="/cookies" className="privacy-link">View our Cookie Policy</Link>
             </p>
           </section>
 
@@ -143,17 +142,6 @@ export default function Privacy() {
             </p>
             <p>
               Continued use of Auburn Pulse after policy updates constitutes acceptance of the changes.
-            </p>
-          </section>
-
-          <section className="privacy-section">
-            <h2>Contact Us</h2>
-            <p>
-              Questions about this privacy policy? Contact us at{' '}
-              <a href="mailto:hello@auburnpulse.com" className="privacy-email">hello@auburnpulse.com</a>.
-            </p>
-            <p>
-              We're committed to transparency and will respond to privacy inquiries promptly.
             </p>
           </section>
         </div>
@@ -270,13 +258,13 @@ export default function Privacy() {
             margin-bottom: 6px;
           }
 
-          .privacy-email {
+          .privacy-link {
             color: var(--auburn-orange);
             text-decoration: none;
             font-weight: 500;
           }
 
-          .privacy-email:hover {
+          .privacy-link:hover {
             text-decoration: underline;
           }
 

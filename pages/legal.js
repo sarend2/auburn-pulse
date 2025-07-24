@@ -1,4 +1,4 @@
-// pages/legal.js
+// pages/legal.js (UPDATED - No Email)
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
@@ -67,18 +67,9 @@ export default function Legal() {
           <section className="legal-section">
             <h2>📊 Analytics & Privacy</h2>
             <p>
-              This site uses <strong>anonymous analytics</strong> (Vercel Analytics) to understand usage patterns 
+              This site uses <strong>anonymous analytics</strong> (Google Analytics) to understand usage patterns 
               and improve user experience. <strong>No personal information is collected, stored, or shared</strong>. 
-              We do not use cookies for tracking or advertising purposes.
-            </p>
-          </section>
-
-          <section className="legal-section">
-            <h2>📧 Contact & Feedback</h2>
-            <p>
-              For questions, concerns, or suggestions about Auburn Pulse, please contact us at{' '}
-              <a href="mailto:hello@auburnpulse.com" className="legal-email">hello@auburnpulse.com</a>.
-              We welcome feedback from the Auburn community!
+              Third-party advertising partners may use cookies for ad delivery and measurement.
             </p>
           </section>
 
@@ -193,16 +184,6 @@ export default function Legal() {
 
           .legal-section li {
             margin-bottom: 6px;
-          }
-
-          .legal-email {
-            color: var(--auburn-orange);
-            text-decoration: none;
-            font-weight: 500;
-          }
-
-          .legal-email:hover {
-            text-decoration: underline;
           }
 
           .last-updated {

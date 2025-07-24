@@ -133,14 +133,6 @@ export default function Cookies() {
               Continued use of Auburn Pulse after policy updates constitutes acceptance of the changes.
             </p>
           </section>
-
-          <section className="cookies-section">
-            <h2>Contact Us</h2>
-            <p>
-              If you have questions about our cookie policy, please contact us at{' '}
-              <a href="mailto:hello@auburnpulse.com" className="cookies-link">hello@auburnpulse.com</a>.
-            </p>
-          </section>
         </div>
 
         <div className="cookies-footer">
