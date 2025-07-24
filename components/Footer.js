@@ -7,18 +7,14 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-main">
           <p className="footer-tagline">Made with 🧡 by Auburn locals</p>
-          <p className="footer-contact">
-            Questions or suggestions? Email us at{' '}
-            <a href="mailto:hello@auburnpulse.com" className="footer-email">
-              hello@auburnpulse.com
-            </a>
-          </p>
         </div>
         
         <div className="footer-links">
           <Link href="/legal" className="footer-link">Legal & Disclaimers</Link>
           <span className="footer-divider">•</span>
           <Link href="/privacy" className="footer-link">Privacy Policy</Link>
+          <span className="footer-divider">•</span>
+          <Link href="/cookies" className="footer-link">Cookie Policy</Link>
         </div>
         
         <div className="footer-bottom">
