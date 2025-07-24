@@ -1,24 +1,18 @@
+// pages/explore.js
 import { useEffect } from 'react'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const places = [
   {
-    type: "Campus Landmark",
-    title: "Toomer's Corner",
-    description: "The heart of Auburn University and home to the famous oak trees. Experience the legendary tradition of rolling the trees after victories and grab a fresh-squeezed lemonade.",
-    mapQuery: "Toomer%27s+Corner+Auburn+AL",
-    rating: "⭐⭐⭐⭐⭐"
-  },
-  {
-    type: "Natural Beauty", 
+    type: "Natural Beauty",
     title: "Chewacla State Park",
-    description: "Alabama's stunning state park just minutes from campus. Features hiking trails, a beautiful lake, waterfalls, and perfect spots for picnics and outdoor photography.",
+    description: "Alabama's stunning state park just minutes from campus. Features hiking trails, beautiful waterfalls, and perfect spots for picnics and outdoor photography.",
     mapQuery: "Chewacla+State+Park+Auburn+AL",
     rating: "⭐⭐⭐⭐⭐"
   },
   {
-    type: "Historic Campus",
+    type: "Campus Landmark",
     title: "Auburn University Campus",
     description: "Walk through one of America's most beautiful campuses. Don't miss Samford Hall, the War Eagle statue, and the stunning oak-lined pathways.",
     mapQuery: "Auburn+University+Campus+Auburn+AL", 
@@ -32,10 +26,45 @@ const places = [
     rating: "⭐⭐⭐⭐"
   },
   {
+    type: "Nature Preserve",
+    title: "Kreher Preserve & Nature Center",
+    description: "120-acre nature preserve with trails through forests, wetlands, and open fields. Perfect for wildlife watching and educational programs.",
+    mapQuery: "Kreher+Preserve+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Botanical Beauty",
+    title: "East Alabama Botanical Gardens",
+    description: "6.5-acre themed gardens featuring roses, herbs, and butterfly gardens. Free admission with peaceful spots for picnics and photography.",
+    mapQuery: "East+Alabama+Botanical+Gardens+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Local Market",
+    title: "City Market at Town Creek Park",
+    description: "Saturday farmers market featuring local vendors, fresh produce, handmade crafts, and live music. Perfect for weekend mornings (April-October).",
+    mapQuery: "Town+Creek+Park+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Wildlife Education",
+    title: "Auburn University Raptor Center",
+    description: "Educational center featuring birds of prey including owls, hawks, and eagles. Offers fascinating tours and conservation programs.",
+    mapQuery: "Auburn+University+Raptor+Center+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
     type: "Historic Downtown",
     title: "Historic Downtown Opelika",
     description: "Just minutes from Auburn, explore this charming historic downtown with antique shops, local boutiques, and beautiful 19th-century architecture.",
     mapQuery: "Historic+Downtown+Opelika+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Historic District",
+    title: "Opelika Northside Historic District",
+    description: "Walk through this beautifully preserved neighborhood featuring Victorian and Craftsman-style homes on the National Register of Historic Places.",
+    mapQuery: "Northside+Historic+District+Opelika+AL",
     rating: "⭐⭐⭐⭐"
   }
 ]

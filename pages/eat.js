@@ -1,14 +1,49 @@
-// pages/eat.js
+// pages/eat.js - COMPLETE WORKING VERSION
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const places = [
   {
-    type: "Fine Dining",
+    type: "Top Pick",
+    title: "Cafe De Fleur",
+    description: "Auburn's premier dining destination combining French elegance with Southern hospitality. Exceptional cuisine and intimate atmosphere make this the perfect choice for special occasions and memorable evenings.",
+    mapQuery: "Cafe+De+Fleur+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Craft Beer & Comfort",
+    title: "The Hound",
+    description: "Cozy hunting lodge vibes meet serious comfort food. Famous for their bacon flight and massive burgers, plus 28 craft beers on tap. Perfect for game day crowds or casual date nights.",
+    mapQuery: "The+Hound+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Farm-to-Table",
     title: "Acre",
     description: "Farm-to-table dining with seasonal Southern ingredients and craft cocktails. Think upscale comfort food in a sophisticated atmosphere—perfect for special date nights.",
     mapQuery: "Acre+Auburn+AL",
     rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Fresh & Vibrant",
+    title: "Lucy's",
+    description: "Auburn's brunch destination with Instagram-worthy giant pancakes and fresh seasonal dishes. The bright atmosphere and killer gin & tonics make it perfect for weekend gatherings.",
+    mapQuery: "Lucy%27s+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Coastal Elegance",
+    title: "The Depot",
+    description: "Former train station turned sophisticated brasserie serving Gulf oysters and coastal favorites. Industrial-chic atmosphere perfect for special occasions and wine lovers.",
+    mapQuery: "The+Depot+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Sophisticated Comfort",
+    title: "Amsterdam Cafe",
+    description: "Upscale yet welcoming spot near Toomer's Corner. Known for their crab cake avocado sandwich and excellent wine selection. Ideal for refined brunches and intimate dinners.",
+    mapQuery: "Amsterdam+Cafe+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
   },
   {
     type: "Coffee & Vibes", 
@@ -37,6 +72,20 @@ const places = [
     description: "Upscale Southern cuisine in a beautiful historic home. Known for exceptional steaks, seafood, and an extensive wine list—Auburn's special occasion spot.",
     mapQuery: "Hamilton%27s+on+Magnolia+Auburn+AL",
     rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Italian Escape",
+    title: "Ariccia Cucina",
+    description: "Authentic Italian experience with Alabama's award-winning porchetta. Open kitchen energy and relaxed patio dining transport you straight to Italy without leaving Auburn.",
+    mapQuery: "Ariccia+Cucina+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Historic Landmark",
+    title: "Toomer's Drugs",
+    description: "More than a pharmacy—it's Auburn's heart. World-famous fresh-squeezed lemonade and classic diner fare create the ultimate Toomer's Corner experience for every Tiger.",
+    mapQuery: "Toomer%27s+Drugs+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
   }
 ]
 
@@ -45,7 +94,7 @@ export default function Eat() {
     <Layout title="Eat & Drink - Auburn Pulse">
       <div className="eat-container">
         <div className="header">
-          <Link href="/" className="home-button">
+          <Link href="/" className="back-button">
             ← Back to Home
           </Link>
           <h1>🍽️ Eat & Drink</h1>
@@ -53,7 +102,7 @@ export default function Eat() {
         </div>
 
         <div className="quick-info">
-          <h3>🐅 Alumni Tip</h3>
+          <h3>🎓 Alumni Tips</h3>
           <p>Most spots get packed during game weekends! Make reservations early or arrive before kickoff for the best Auburn dining experience.</p>
         </div>
 
@@ -115,31 +164,6 @@ export default function Eat() {
             opacity: 0.9;
             position: relative;
             z-index: 1;
-          }
-
-          .home-button {
-            background: linear-gradient(135deg, #6b7280, #4b5563);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-bottom: 20px;
-            box-shadow: none;
-          }
-
-          .home-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(107, 114, 128, 0.4);
-            color: white;
-            text-decoration: none;
           }
 
           .quick-info {
