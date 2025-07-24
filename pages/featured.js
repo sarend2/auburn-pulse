@@ -5,9 +5,9 @@ import Layout from '../components/Layout'
 const places = [
   {
     type: "Must-Do This Week",
-    title: "Auburn Football Game Day Experience",
-    description: "This week's must-do: Experience the magic of Auburn football season! From tailgating on campus to the roar of Jordan-Hare Stadium, immerse yourself in one of college football's greatest traditions.",
-    mapQuery: "Auburn+University+Auburn+AL",
+    title: "City Market at Town Creek Park",
+    description: "This week's must-do: Saturday farmers market featuring local vendors, fresh produce, artisan crafts, and live music. Perfect way to start your weekend with Auburn's vibrant community spirit!",
+    mapQuery: "Town+Creek+Park+Auburn+AL",
     rating: "⭐⭐⭐⭐⭐"
   },
   {
@@ -16,6 +16,13 @@ const places = [
     description: "Perfect weekend activity: Explore Auburn's vibrant arts scene with a self-guided walking tour through downtown galleries, murals, and public art installations. Great for couples or groups!",
     mapQuery: "Downtown+Auburn+AL+Art+Walk",
     rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Seasonal Highlight",
+    title: "East Alabama Botanical Gardens",
+    description: "Summer blooms are in full swing! Visit the themed gardens featuring spectacular roses, herb gardens, and butterfly gardens. Free admission and perfect for morning strolls or afternoon picnics.",
+    mapQuery: "East+Alabama+Botanical+Gardens+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
   }
 ]
 
@@ -37,7 +44,7 @@ export default function Featured() {
 
         <div className="quick-info">
           <h3>🎯 Weekend Special</h3>
-          <p>These are our top recommendations for this Saturday! Perfect Alabama weather and special weekend hours make these Auburn spots extra appealing right now.</p>
+          <p>These are our top recommendations for this weekend! Perfect summer weather and special weekend hours make these Auburn spots extra appealing right now.</p>
         </div>
 
         <div className="places-grid">

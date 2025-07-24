@@ -11,25 +11,74 @@ const places = [
     rating: "⭐⭐⭐⭐⭐"
   },
   {
-    type: "Scenic Adventure", 
+    type: "Interactive Fun", 
+    title: "GoodTimes Entertainment",
+    description: "Modern bowling alley with boutique-style lanes, arcade games, and escape rooms. Great for competitive dates, group hangouts, or celebrations with full bar and restaurant.",
+    mapQuery: "GoodTimes+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Creative Workshop",
+    title: "Spirited Art Paint & Sip",
+    description: "Guided painting classes where you create art while sipping wine or cocktails. Perfect for date nights or girls' nights out with step-by-step instruction and BYOB policy.",
+    mapQuery: "Spirited+Art+Auburn+AL", 
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Adventure Challenge",
+    title: "Auburn Escape Zones",
+    description: "Themed escape rooms with creative puzzles and thrilling storylines. Perfect team-building experience for couples or groups looking for an interactive adventure.",
+    mapQuery: "Auburn+Escape+Zones+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Unique Entertainment",
+    title: "Axe Marks the Spot",
+    description: "Axe throwing venue in nearby Opelika offering safe instruction and competitive fun. Great for adventurous dates with bar service and group-friendly atmosphere.",
+    mapQuery: "Axe+Marks+the+Spot+Opelika+AL",
+    rating: "⭐⭐⭐⭐⭐"
+  },
+  {
+    type: "Active Recreation",
+    title: "Tigertown Sports",
+    description: "Multi-activity venue featuring mini golf, beach volleyball, and virtual golf simulator. Perfect for active dates with full bar and casual competitive atmosphere.",
+    mapQuery: "Tigertown+Sports+Opelika+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Live Entertainment",
+    title: "The Hound",
+    description: "Rustic lodge atmosphere with live music, craft beers, and hearty food. Perfect for cozy date nights with local bands and a relaxed, intimate vibe.",
+    mapQuery: "The+Hound+Auburn+AL",
+    rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Scenic Adventure",
     title: "Chewacla Falls Trail",
     description: "Perfect hiking date spot with beautiful waterfalls and swimming holes. The moderate trail offers stunning views and plenty of photo opportunities for couples.",
     mapQuery: "Chewacla+Falls+Auburn+AL",
     rating: "⭐⭐⭐⭐⭐"
   },
   {
-    type: "Entertainment",
-    title: "Auburn Bowling Center",
-    description: "Classic bowling fun right near campus. Great for casual dates, group hangouts, or rainy day activities. The retro atmosphere adds to the charm.",
-    mapQuery: "Auburn+Bowling+Center+Auburn+AL", 
+    type: "Retro Gaming",
+    title: "Rock 'N Roll Pinball",
+    description: "Classic arcade with pinball machines, retro games, and full bar. Nostalgic atmosphere with neon lights perfect for casual dates and competitive gaming sessions.",
+    mapQuery: "Rock+N+Roll+Pinball+Auburn+AL",
     rating: "⭐⭐⭐⭐"
   },
   {
-    type: "Arts & Culture",
+    type: "Sports Entertainment",
     title: "Auburn Arena Events",
     description: "From Auburn basketball games to concerts and shows, Auburn Arena hosts exciting events year-round. Check the schedule for live entertainment and sporting events.",
     mapQuery: "Auburn+Arena+Auburn+AL",
     rating: "⭐⭐⭐⭐"
+  },
+  {
+    type: "Water Adventure",
+    title: "Lake Auburn Sunset Cruise",
+    description: "Rent a kayak or small boat for a romantic sunset cruise on calm waters. Perfect for intimate dates with stunning golden hour views and peaceful atmosphere.",
+    mapQuery: "Lake+Auburn+Auburn+AL",
+    rating: "⭐⭐⭐⭐⭐"
   },
   {
     type: "Outdoor Fun",
