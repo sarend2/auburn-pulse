@@ -63,7 +63,7 @@ export default function Footer() {
         }
 
         .footer-email {
-          color: var(--auburn-orange);
+          color: #FF8C00;
           text-decoration: none;
           font-weight: 500;
         }
