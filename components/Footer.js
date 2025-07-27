@@ -7,6 +7,9 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-main">
           <p className="footer-tagline">Made with 🧡 by Auburn locals</p>
+          <p className="footer-contact">
+            Questions or advertising? <a href="mailto:theauburnpulse@gmail.com" className="footer-email">theauburnpulse@gmail.com</a>
+          </p>
         </div>
         
         <div className="footer-links">
